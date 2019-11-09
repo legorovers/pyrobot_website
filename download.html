@@ -65,6 +65,16 @@ Released   : 20120825
 
 	<p>Unzip the simulator into the location of your choice.  It will create a folder call pirover_simulator.  This folder contains two files pysim.py (for use on Windows and Linux machines) and pysimosx.py (for use on Macs)</p>
 
+	<p>If possible, add the path to the pirover_simulator, to the PYTHONPATH used by IDLE).  If this isn't possible we have workarounds in the exercises but it will be an easier experience for students if they do not need to grapple with this at an early stage.</p>
+
+	<h3>Setting the PYTHONPATH</h3>
+
+	<p>Setting up the correct PYTHONPATH varies between operating systems and Python installations, but it is worth trying the following:</p>
+
+	<p><b>On Linux/Mac:</b> Add <code>export PYTHONPATH=$PYTHONPATH:/path/to/simulator</code> to the end of the <code>.bashrc</code> file where <code>/path/to/simulator</code> is the path to <code>pirover_simulator</code></p>
+
+	<p><b>On Windows:</b> Add PYTHONPATH as a user variable and give it the value <code>%PYTHONPATH%;\path\to\simulator</code> where <code>\path\to\simulator</code> is the path to <code>pirover_simulator</code></p>
+
 	<h3>Running the Simulator</h3>
 
 	<p>You can run the simulator either from the <i>command line</i> or from a Python development environment such as IDLE.</p>
