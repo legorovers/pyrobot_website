@@ -1,0 +1,140 @@
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Oil Painting 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20120825
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Liverpool Python Robotics Resources: Install the Simulator</title>
+<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Coda:400,800" rel="stylesheet" type="text/css" />
+<link href="styles/legorovers.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="menu-wrapper">
+        <div id="menu">
+                <ul>
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="download.html">The Simulator</a></li>
+                        <li><a href="exercises.html">Worksheets</a></li>
+			<li><a href="training.html">Training</a></li>
+   			<li class="current_page_item"><a href="robots.html">The Robots</a></li>
+<!--                        <li><a href="events.html">Workshops and Events</a></li>
+                        <li><a href="teachers.html">For Teachers</a></li>
+                        <li><a href="developers.html">For Developers</a></li>
+                        <li><a href="links.html">Other Projects</a></li>
+                        <li><a href="contact.html">Conctact</a></li> -->
+                </ul>
+        </div>
+        <!-- end #menu --> 
+</div>
+<div id="header-wrapper">
+        <div id="header">
+                <div id="logo">
+                        <h1><a href="#">Liverpool Python Robotics Resources: The Robots</a></h1>
+                </div>
+        </div>
+</div>
+<!-- end #header -->
+
+<div id="wrapper">
+<div id="page">
+<div id="page-bgtop">
+<div id="page-bgbtm">
+<div id="content">
+
+  <div class="post">
+<div class="entry">
+
+  <p>Our worksheets and exercises are designed to work with two types of Raspberry Pi based kit robot.  These are the Initio and Pi2Go robots produced by <a href=https://4tronix.co.uk>4tronix</a>.  Which of these robot designs is more readily available varies (sometimes it is also easier to get these robots through other suppliers such as Amazon or CPC farnell than it is to get them through 4tronix itself).  4tronix have recently released the Pi2Go2 and we will be updating our resources to work with this in due course.</p>
+
+  <p>Setup Instructions for both robots can be found on the 4tronix website.  Our resources are designed to work with Python 3, while the robots are set up with Python 2.  Instructions for converting them to Python 3 are given below.</p>
+
+  <h3>The Initio</h3>
+
+  <center>
+    <img src=images/IMG_6919.png width=500>
+  </center>
+
+  <p>The Initio Robot is more robust than the Pi2Go, but puts more strain on the batteries and we have found that the motors only really work with Eneloop Pro Rechargable Batteries.  It has a more sophisticated set-up for the ultrasonic distance sensor that can move from side to side, but lacks the light sensors, LEDs and switch that give the Pi2Go a wider range of functionality.</p>
+
+  <p>To convert an Initio robot to work with Python 3 start up the Raspberry Pi.  Open a Terminal and then type:
+    <p><code>
+      $ cd robohat
+    </code>
+   <p> <code>
+      $ 2to3 -w *.py
+    </code>
+
+  <p>We recommend adding the line
+    <code>
+      export PYTHONPATH=$PYTHONPATH:~/robohat
+    </code>
+    to the robot's <b>.bashrc</b> file.
+
+   <h3>The Pi2Go</h3>
+  <center>
+    <img src=images/IMG_2566.jpg width=500>
+  </center>
+
+<p>The Pi2Go Robot is more temperamental than the Initio and a significant number of these robots do not function correctly when setup (typically one of the wheel motors switches on by itself and won't subsequently respond to programming commands).  However they are less power hungry than the Initio (they will work using non-rechargeable batteries but, again, the only rechargeable batteries we have found that can power them reliably are the Eneloop Pro) and have a wider range of functionality such as LEDs, light sensors and a switch.</p>
+    
+  <p>To convert an Initio robot to work with Python 3 start up the Raspberry Pi.  Open a Terminal and then type:
+    <p><code>
+      $ cd pi2go 
+    </code>
+    <p><code>
+      $ 2to3 -w *.py
+     </code>
+
+  <p>We recommend adding the line
+    <code>
+      export PYTHONPATH=$PYTHONPATH:~/pi2go
+    </code>
+    to the robot's <b>.bashrc</b> file.
+
+</div>
+</div>
+
+<div style="clear: both;">&nbsp;</div>
+
+</div>
+
+<div id="sidebar">
+<p><img src="images/h1-2012-logo.png" alt="Liverpool University Logo">
+<p><ul>
+
+<li>
+<h2>Links</h2>
+<ul>
+<li><a href="http://www.csc.liv.ac.uk/~lad">Dr. Louise Dennis (Pyrobots Coordinator)</a></li>
+<li><a href="http://www.liv.ac.uk/CAST">The Centre for Autonomous Systems Technology</a></li>
+<li><a href="http://www.csc.liv.ac.uk">Liverpool Department of Computer Science</a></li>
+</ul>
+</li>
+
+</ul>                                </div>
+<!-- end #sidebar -->
+<div style="clear: both;">&nbsp;</div>
+
+</div>
+</div>
+</div>
+<!-- end #page --> 
+
+</div>
+<div id="footer">
+        <p>Copyright (c) 2019 Centre for Autonomous Systems Technology, University of Liverpool. All rights reserved. Design by <a href="http://www.freecsstemplates.org/" rel="nofollow">FreeCSSTemplates.org</a>.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>
